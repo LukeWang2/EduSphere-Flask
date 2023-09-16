@@ -6,7 +6,7 @@ URL = "https://storage.googleapis.com/edusphere/low_poly/"
 # read the pg connection string from the environment variable
 pg_conn_string = os.environ["DATABASE_URL"]
 # Get the file names
-items = os.listdir("/Users/lukewang/Downloads/low_poly")
+# items = os.listdir("$PATH")
 
 # Connect to an existing database
 conn = psycopg.connect(pg_conn_string)
