@@ -1,5 +1,5 @@
 # EduSphere_Flask
-
+## Flask REST API for EduSphere
 Install dependencies
 ``` 
 pip3 install psycopg
