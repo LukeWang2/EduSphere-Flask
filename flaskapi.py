@@ -29,7 +29,16 @@ def similarity():
     # get the embeddings
     (ans, guess) = co.embed(texts=[ans, guess]).embeddings
 
-    return {"similarity": calculate_similarity(ans, guess)}
+    similarity_score = calculate_similarity(ans, guess)
+
+    if similarity_score >= 0.9:
+        sim = "correct"
+    elif similarity_score > 0.7:
+        sim = "close"
+    else:
+        sim = "incorrect"
+
+    return {"similarity_score": similarity_score, "similarity": sim}
 
 
 if __name__ == "__main__":
