@@ -1,0 +1,6 @@
+[submodule "EduSphere-VisionOS"]
+	path = EduSphere-VisionOS
+	url = https://github.com/mingchungx/EduSphere-VisionOS.git
+[submodule "EduSphere"]
+	path = EduSphere
+	url = https://github.com/evinli/EduSphere.git
